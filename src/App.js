@@ -13,13 +13,11 @@ import AddPost from "./Pages/Post/AddPost";
 import Posts from "./Pages/Post/Post";
 
 // Context for the theme settings and the functions to handle them
-export const LoaderContext = React.createContext();
+export const LoaderContext = React.createContext();s
 export const ProfileContext = React.createContext();
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-  const [darkMode, setDarkMode] = useState(false);
-  const [blueColorMode, setBlueColorMode] = useState(false);
   const appRef = useRef(null);
   const [userName, setUserName] = useState("");
   const [profilePic, setProfilePic] = useState(null);

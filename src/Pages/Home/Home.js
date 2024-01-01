@@ -1,5 +1,5 @@
 import React, { useEffect, useContext } from "react";
-import { ThemeContext, LoaderContext } from "../../App";
+import { LoaderContext } from "../../App";
 import { motion } from "framer-motion";
 import Sidebar from "../../Components/Sidebar/Sidebar";
 import Navbar from "../../Components/Navbar/Navbar";

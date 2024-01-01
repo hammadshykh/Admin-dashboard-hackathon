@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
-import { ThemeContext, ProfileContext } from "../../App";
+import {ProfileContext } from "../../App";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import CreditCardIcon from "@mui/icons-material/CreditCard";
