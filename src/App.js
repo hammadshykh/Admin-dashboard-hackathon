@@ -13,7 +13,7 @@ import AddPost from "./Pages/Post/AddPost";
 import Posts from "./Pages/Post/Post";
 
 // Context for the theme settings and the functions to handle them
-export const LoaderContext = React.createContext();s
+export const LoaderContext = React.createContext();
 export const ProfileContext = React.createContext();
 
 function App() {
