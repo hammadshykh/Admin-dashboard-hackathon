@@ -75,7 +75,7 @@ const AddPost = () => {
       image: url,
       data: formattedDate,
       id: UUID,
-      status: true,
+      status: "true",
       // Other user data
     };
 
@@ -129,7 +129,8 @@ const AddPost = () => {
                       </label>
                       <input
                         type="file"
-                        // style={{ display: "none", cursor: "pointer" }}
+                        id="file"
+                        style={{ display: "none", cursor: "pointer" }}
                         onChange={handleChange}
                       />
                     </div>

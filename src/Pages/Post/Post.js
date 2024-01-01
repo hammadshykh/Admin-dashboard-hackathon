@@ -31,6 +31,7 @@ const Posts = () => {
     };
     getUsersData();
   }, []);
+
   console.log(data);
 
   return (
@@ -58,8 +59,8 @@ const Posts = () => {
               columns={productListTableColumns}
               height={400}
             /> */}
-            <div>
-              <h2>Your Data:</h2>
+            <div style={{ paddingRight: "60px" }}>
+              <h2 style={{ padding: "10px" }}>Your Post Data:</h2>
               <ul>
                 <PostDataTable tableRows={data} />
               </ul>

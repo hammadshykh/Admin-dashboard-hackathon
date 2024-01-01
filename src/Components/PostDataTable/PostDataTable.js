@@ -13,8 +13,9 @@ import "../../Reusable Styling/Table.sass";
 const PostDataTable = ({ onRowClick, tableRows }) => {
   const theme = useTheme();
 
+  // Example: Delete a document by its ID
+
   const tableCellNamesForTransaction = [
-    "Tracking ID",
     "Product",
     "Title",
     "Description",
@@ -55,9 +56,6 @@ const PostDataTable = ({ onRowClick, tableRows }) => {
             tableRows.map((row) => (
               <TableRow key={row.id} onClick={() => onRowClick(row.id)}>
                 <TableCell className="table_cell" sx={{ p: 1 }}>
-                  {row.id}{" "}
-                </TableCell>
-                <TableCell className="table_cell" sx={{ p: 1 }}>
                   <div className="cell_wrapper">
                     <img src={row.image} alt="Table" className="cell_img" />
                   </div>
@@ -79,6 +77,33 @@ const PostDataTable = ({ onRowClick, tableRows }) => {
                   >
                     {row.status}
                   </span>
+                </TableCell>
+                <TableCell className="table_cell" sx={{ p: 1 }}>
+                  <button
+                    style={{
+                      background: "orange",
+                      border: "none",
+                      color: "white",
+                      fontWeight: "bold",
+                      padding: "6px 18px",
+                    }}
+                  >
+                    Edit
+                  </button>
+                </TableCell>
+                <TableCell className="table_cell" sx={{ p: 1 }}>
+                  <button
+                    style={{
+                      background: "red",
+                      fontWeight: "bold",
+                      border: "none",
+                      color: "white",
+                      padding: "6px 18px",
+                    }}
+                    type="button"
+                  >
+                    Delete
+                  </button>
                 </TableCell>
               </TableRow>
             ))}

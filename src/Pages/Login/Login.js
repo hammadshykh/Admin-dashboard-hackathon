@@ -73,7 +73,7 @@ const Login = (props) => {
 
   const randomPassword = "admin005";
   useEffect(() => {
-    const randomAdmins = ["sam005", "sachin005", "max005"];
+    const randomAdmins = ["hammad005", "admin005"];
     const randomIndex = Math.floor(Math.random() * randomAdmins.length);
     setSelectedRandomAdmin(randomAdmins[randomIndex]);
     document.title = "Login | Admin Dashboard";
